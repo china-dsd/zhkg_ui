@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>单位画像</title>
+    <link rel="stylesheet" href="css/index/font.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/unit/unit.css">
+    <!-- ECharts单文件引入 -->
+    <script src="js/echarts.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="js/scroll.min.js"></script>
+
+</head>
+
+<body>
+    <div class="all">
+        <!--标题-->
+        <div class="title">
+            <span class="zx">
+                在线审计与经营风险防范数据可视化
+            </span>
+            <div class="right">
+                <span style="font-size: 20px">当前时间:</span>
+                <span id="show_time0" style="font-size: 20px"></span>&nbsp;&nbsp;
+                <span style="font-size: 20px;color: #19b0d4;">登录</span>
+                <span style="font-size: 20px;color: #19b0d4;">登录&nbsp;</span>
+                <span style="font-size: 20px;color: #19b0d4;">|&nbsp;</span>
+                <span style="font-size: 20px;color: #19b0d4;">退出</span>
+                <span class="iconfont icon-iconfontarrowdown" style="font-size: 20px;color: #19b0d4;"></span>
+            </div>
+
+            <img src="image/index/border.png">
+        </div>
+        <!--进度条-->
+        <div class="maturity-route">
+            <a href="index.html">首页</a>&nbsp;&nbsp;>&nbsp;
+            <a href="#">单位画像</a>
+        </div>
+        <!--echarts图标-->
+        <div class="cotent_box">
+            <div class="left">
+                <!--成熟度评分-->
+                <div class="left_one">
+                    <img src="image/index/left_top.png" style="position: absolute;top:-10px;left:0;" alt="角标">
+                    <img src="image/index/left_bottom.png" style="position: absolute;bottom:-10px;left:0;" alt="角标">
+                    <img src="image/index/right_top.png" style="position: absolute;top:-10px;right:0;" alt="角标">
+                    <img src="image/index/right_bottom.png" style="position: absolute;bottom:-10px;right:0;" alt="角标">
+                    <div class="line1">
+                        <span style="display:block;font-size: 20px;color: #ffffff;">成熟度评分</span>
+                        <div id="box1" style="width: 501px;height: 200px;"></div>
+                    </div>
+                </div>
+                <!--风险事件数量及金额-->
+                <div class="left_two">
+                    <img src="image/index/left_top.png" style="position: absolute;top:-10px;left:0;" alt="角标">
+                    <img src="image/index/left_bottom.png" style="position: absolute;bottom:-10px;left:0;" alt="角标">
+                    <img src="image/index/right_top.png" style="position: absolute;top:-10px;right:0;" alt="角标">
+                    <img src="image/index/right_bottom.png" style="position: absolute;bottom:-10px;right:0;" alt="角标">
+                    <div class="line2">
+                        <span style="display:block;font-size: 20px;color: #ffffff;">风险事件数量及金额</span>
+                        <div id="box2" style="width: 480px;height: 200px;"></div>
+                    </div>
+                </div>
+                <!--审计问题记录-->
+                <div class="left_three">
+                    <img src="image/index/left_top.png" style="position: absolute;top:-10px;left:0;" alt="角标">
+                    <img src="image/index/left_bottom.png" style="position: absolute;bottom:-10px;left:0;" alt="角标">
+                    <img src="image/index/right_top.png" style="position: absolute;top:-10px;right:0;" alt="角标">
+                    <img src="image/index/right_bottom.png" style="position: absolute;bottom:-10px;right:0;" alt="角标">
+                    <div class="line3">
+                        <span style="display:block;font-size: 20px;color: #ffffff;">审计问题记录</span>
+                        <div id="box3" style="width: 540px;height: 180px;"></div>
+                    </div>
+
+                </div>
+                <!--法律案件-->
+                <div class="left_four">
+                    <img src="image/index/left_top.png" style="position: absolute;top:-10px;left:0;" alt="角标">
+                    <img src="image/index/left_bottom.png" style="position: absolute;bottom:-10px;left:0;" alt="角标">
+                    <img src="image/index/right_top.png" style="position: absolute;top:-10px;right:0;" alt="角标">
+                    <img src="image/index/right_bottom.png" style="position: absolute;bottom:-10px;right:0;" alt="角标">
+                    <div class="line4">
+                        <span style="display:block;font-size: 20px;color: #ffffff;">法律案件数量及金额</span>
+                        <div id="box4" style="width: 480px;height: 200px;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="center">
+                <!--海淀区地图-->
+                <div class="center_one">
+                    <img src="image/index/left_top.png" style="position: absolute;top:-10px;left:0;" alt="角标">
+                    <img src="image/index/left_bottom.png" style="position: absolute;bottom:-10px;left:0;" alt="角标">
+                    <img src="image/index/right_top.png" style="position: absolute;top:-10px;right:0;" alt="角标">
+                    <img src="image/index/right_bottom.png" style="position: absolute;bottom:-10px;right:0;" alt="角标">
+                    <div class="line5">
+                        <div class="yw">
+                            <a href="audit.html" style="display: block;text-decoration: none;color: white">业务画像</a>
+                        </div>
+                        <div class="hx  active" style="display: block;">单位画像</div>
+                        <div id="box5">
+                            <span>二级单位</span>
+                            <br>
+                            <select>
+                                <option value="">二院</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                            </select>
+                            <select>
+                                <option value="">二院</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                            </select>
+                            <div class="centent">
+                                <div class="line9-table style2 scrollXY scroll" id="t_r_content" style="border:1px solid #79F3FB;width: 643px;height: 270px;padding: 10px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--重大风险事件-->
+                <div class="center_two">
+                    <img src="image/index/left_top.png" style="position: absolute;top:-10px;left:0;" alt="角标">
+                    <img src="image/index/left_bottom.png" style="position: absolute;bottom:-10px;left:0;" alt="角标">
+                    <img src="image/index/right_top.png" style="position: absolute;top:-10px;right:0;" alt="角标">
+                    <img src="image/index/right_bottom.png" style="position: absolute;bottom:-10px;right:0;" alt="角标">
+                    <div class="line6">
+                        <span style="display:block;font-size: 20px;color: #ffffff;">重大风险事件</span>
+                        <div id="box6" style="width: 700px;height: 160px;"></div>
+                    </div>
+                </div>
+                <!--审计问题整改记录-->
+                <div class="center_three">
+                    <img src="image/index/left_top.png" style="position: absolute;top:-10px;left:0;" alt="角标">
+                    <img src="image/index/left_bottom.png" style="position: absolute;bottom:-10px;left:0;" alt="角标">
+                    <img src="image/index/right_top.png" style="position: absolute;top:-10px;right:0;" alt="角标">
+                    <img src="image/index/right_bottom.png" style="position: absolute;bottom:-10px;right:0;" alt="角标">
+                    <div class="line7">
+                        <span style="display:block;font-size: 20px;color: #ffffff;">&nbsp;&nbsp;审计问题整改记录</span>
+                        <!--审计问题整改记录7_1-->
+                        <div style="width: 160px;height: 160px;float: left;text-align: center;position: relative;">
+                            <div id="box7_1" style="width: 175px;height: 112px;"></div>
+                            <span style="color: #ffffff;font-size: 16px;position: absolute;left: 90px;top: 18px;text-align: left;">整改进行中
+                                <span id="box7_1_span" style="color: #589A24;font-size: 20px;"></span>个</span>
+                            <img style="width: 40px;height: 40px;position: absolute;left: 29px;top:49px;" src="image/index/time.png" alt="整改进行中">
+
+                        </div>
+                        <!--审计问题整改记录7_2-->
+                        <div style="width: 160px;height: 160px;float: left;text-align: center;position: relative;">
+                            <div id="box7_2" style="width: 175px;height: 112px;"></div>
+                            <span style="color: #ffffff;font-size: 16px;position: absolute;left: 90px;top: 18px;text-align: left;">整改将到期
+                                <span id="box7_2_span" style="color: #AD820A;font-size: 37px;"></span>个</span>
+                            <img style="width: 30px;height: 37px;position: absolute;left: 29px;top:51px;" src="image/index/dq.png" alt="整改将到期">
+
+                        </div>
+                        <!--审计问题整改记录7_3-->
+                        <div style="width: 160px;height: 160px;float: left;text-align: center;position: relative;">
+                            <div id="box7_3" style="width: 175px;height: 112px;"></div>
+                            <span style="color: #ffffff;font-size: 16px;position: absolute;left: 90px;top: 18px;text-align: left;">整改已延期
+                                <span id="box7_3_span" style="color: #A42C24;font-size: 37px;"></span>个</span>
+                            <img style="width: 30px;height: 37px;position: absolute;left:33px;top:51px;" src="image/index/tanhao.png" alt="整改已延期">
+
+                        </div>
+                        <!--审计问题整改记录7_4-->
+                        <div style="width: 160px;height: 160px;float: left;text-align: center;position: relative;">
+                            <div id="box7_4" style="width: 175px;height: 112px;"></div>
+                            <span style="color: #ffffff;font-size: 16px;position: absolute;left: 90px;top: 18px;text-align: left;">整改已完成
+                                <span id="box7_4_span" style="color: #1D962A;font-size: 20px;"></span>个</span>
+                            <img style="width: 30px;height: 37px;position: absolute;left: 29px;top:51px;" src="image/index/duihao.png" alt="整改已完成">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <!--合作单位信用详情-->
+                <div class="right_one">
+                    <img src="image/index/left_top.png" style="position: absolute;top:-10px;left:0;" alt="角标">
+                    <img src="image/index/left_bottom.png" style="position: absolute;bottom:-10px;left:0;" alt="角标">
+                    <img src="image/index/right_top.png" style="position: absolute;top:-10px;right:0;" alt="角标">
+                    <img src="image/index/right_bottom.png" style="position: absolute;bottom:-10px;right:0;" alt="角标">
+                    <div class="line8">
+                        <span style="display:block;font-size: 20px;color: #ffffff;">合作单位信用详情</span>
+                        <div style="width: 574px;">
+                            <div class="line9-table style2 scrollXY scroll" id="t_r_content" style="border: 1px solid #36f8ff;border-radius: 5px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--合作公司信用等级统计-->
+                <div class="right_two">
+                    <img src="image/index/left_top.png" style="position: absolute;top:-10px;left:0;" alt="角标">
+                    <img src="image/index/left_bottom.png" style="position: absolute;bottom:-10px;left:0;" alt="角标">
+                    <img src="image/index/right_top.png" style="position: absolute;top:-10px;right:0;" alt="角标">
+                    <img src="image/index/right_bottom.png" style="position: absolute;bottom:-10px;right:0;" alt="角标">
+                    <div class="line9">
+                        <span style="display:block;font-size: 20px;color: #ffffff;">合作公司信用等级占比</span>
+                        <div id="box9" style="width: 576px;height: 160px;margin-top: -10px;"></div>
+                    </div>
+                </div>
+                <!--业务雷达图-->
+                <div class="right_three">
+                    <img src="image/index/left_top.png" style="position: absolute;top:-10px;left:0;" alt="角标">
+                    <img src="image/index/left_bottom.png" style="position: absolute;bottom:-10px;left:0;" alt="角标">
+                    <img src="image/index/right_top.png" style="position: absolute;top:-10px;right:0;" alt="角标">
+                    <img src="image/index/right_bottom.png" style="position: absolute;bottom:-10px;right:0;" alt="角标">
+                    <div class="line10">
+                        <span style="font-size: 20px;color: #ffffff;">业务雷达图</span>
+                        <div id="box10" style="margin-left:-30px;margin-top:-35px;width: 600px;height: 220px;"></div>
+                    </div>
+                </div>
+                <!--风险评估-->
+                <div class="right_four">
+                    <img src="image/index/left_top.png" style="position: absolute;top:-10px;left:0;" alt="角标">
+                    <img src="image/index/left_bottom.png" style="position: absolute;bottom:-10px;left:0;" alt="角标">
+                    <img src="image/index/right_top.png" style="position: absolute;top:-10px;right:0;" alt="角标">
+                    <img src="image/index/right_bottom.png" style="position: absolute;bottom:-10px;right:0;" alt="角标">
+                    <div class="line11">
+                        <span style="display:block;font-size: 20px;color: #ffffff;">风险评估</span>
+                        <div style="width:280px;height:180px;float: left;text-align: center;">
+                            <div id="box11_1" style="width: 280px;height: 180px;margin-top: -20px;margin-left: 80px"></div>
+                            <span style="color: #ffffff;font-size: 13px;margin-top: -20px;display: block;margin-left: 156px;">风险事件数量图</span>
+                        </div>
+                        <!--<div style="width: 230px;height: 160px;float: right;text-align: center;">-->
+                        <!--<div id="box11_2" style="width: 230px;height: 120px;margin-left: -50px;"></div>-->
+                        <!--<span style="color: #ffffff;font-size: 13px;margin-top: -10px;display: block;">风险事件金额占比图</span>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-time">
+            此数据来源于审计统计&nbsp;
+            <span></span>
+        </div>
+    </div>
+</body>
+<script src="js/domjs/unit.js"></script>
+<script src="js/all.js"></script>
+<script src="js/echart.min.js"></script>
+<script src="js/worldcloud.js"></script>
+<script type="text/javaScript">
+    //信用等级占比 (字符云)
+var wordCloudChart = echarts.init(document.getElementById("box6"));
+wordCloud = {
+    tooltip: {
+        show: true
+    },
+    series: [{
+        textStyle : {
+            normal : {
+                color : '#36f8ff'
+            },
+        },
+        name: '信用等级占比',
+        type: 'wordCloud',
+        size: ['80%', '80%'],
+        // itemStyle:{
+        //      color:'#33edf4',
+        // },
+        // 旋转最大和最小角度
+        rotationRange: [0, 0],
+        //rotationStep:30,//文字旋转单位
+        // 不知道是啥
+        textRotation: [0, 0],
+        textPadding: 0,
+        autoSize: {
+            enable: true,
+            minSize: 14
+        },
+        data: []
+    }]
+};
+wordCloudChart.setOption(wordCloud);
+function getPieData_3(){
+    $.ajax({
+        type: 'GET',
+        url: url+"/unit/wordCloud?type=1"+"&token="+token,
+        data: {},
+        dataType:'json',
+        success: function(res){
+            var data = res.data;
+            var proj_title = data;
+            if(res.code =="000000"){
+                wordCloud.series[0].data = proj_title;
+                wordCloudChart.setOption(wordCloud);
+            }else if(res.code == "100001"){
+                location.href = '/';
+            }
+        }
+    });
+}
+getPieData_3();
+</script>
+</html>

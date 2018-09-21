@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>法律</title>
+    <link rel="stylesheet" href="css/audit/main.css">
+    <link rel="stylesheet" href="css/audit/daterangepicker.css" />
+    <link rel="stylesheet" href="css/all.css">
+    <script src="js/echarts.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="js/scroll.min.js"></script>
+
+</head>
+<body>
+    <div id="audit" style="position: relative">
+        <!-- 标题 -->
+        <div class="audit-title">在线审计与经营风险防范数据可视化
+            <!-- 登陆条 -->
+            <div class="audit-land">
+                <span style="color: #fff;font-size: 20px;">当前时间:&nbsp;</span>
+                <span id="show_time0"  style="color: #fff;font-size: 20px;"></span>
+                <span><a href="#" style="color: #36f8ff;font-size: 20px;line-height: 20px;text-decoration: none;">登录</a></span>
+                <span style="color: #36f8ff;font-size: 20px;line-height: 20px;cursor: pointer;">|&nbsp;退出</span>
+                <span style="display: inline-block;width:0;height:0;border-left: 5px solid transparent;border-top: 5px solid #33f8ff;border-right: 5px solid transparent;"></span>
+            </div>
+        </div>
+        
+        <div class="title-bottom"></div>
+        <!-- 路径 -->
+        <div class="audit-route">
+            <a href="index.html">首页</a>&nbsp;&nbsp;>&nbsp;
+            <a href="#">业务画像</a>
+        </div>
+        <!-- 内容 -->
+        <div class="audit-content">
+            <!-- 列表 -->
+            <div class="audit-content-list">
+                <ul>
+                    <li><a href="audit.html">审计问题</a></li>
+                    <li><a href="maturity.html">成熟度</a></li>
+                    <li><a href="assess.html">风险评估</a></li>
+                    <li><a href="credit.html">信用</a></li>
+                    <li class="active"><a href="#">法律</a></li>
+                    <li><a href="events.html">风险事件</a></li>
+                </ul>
+            </div>
+            <!-- 表格 -->
+            <div class="audit-content-table">
+                <div class="table-content">
+                    <div class="table">
+                        <div class="table-title">
+                            <ul>
+                                <li class="lipie active liranking" style="width: 250px;">法律案件标的金额排名</li>
+                                <li class="lipie noactive limoney" style="width: 280px;">法律案件涉及两金金额排名</li>
+                                <li class="notext" style="width: 463px;"></li>
+                            </ul>
+                        </div>
+                        <div class="table-text">
+                            <div class="table-text-td">
+                                <!-- 3 -->
+                                <div style="width:100%">
+                                    <div class="t_r centent">
+                                        <div class="t_r_content style2 scrollXY scroll" id="t_r_content" onscroll="">
+                                            <table class="hh" style="width: 3000px;"></table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 四角 -->
+                <img class="angle-1" src="./image/audit/angle-1.png" alt="上角">
+                <img class="angle-2" src="./image/audit/angle-2.png" alt="右角">
+                <img class="angle-3" src="./image/audit/angle-3.png" alt="下角">
+                <img class="angle-4" src="./image/audit/angle-4.png" alt="左角">
+            </div>
+            <!-- 审计次数 -->
+            <div class="audit-content-num">
+                <div class="num-content">
+                    <div class="table">
+                        <div class="table-title">
+                            <ul>
+                                <li class="li active litimes" style="width: 260px;">二级各单位被告次数情况</li>
+                                <li class="li noactive litimesed" style="width: 260px;">二级各单位原告次数情况</li>
+                                <!-- <li class="notext"></li> -->
+                            </ul>
+                        </div>
+                        <div class="table-text">
+                            <div class="btn" style="margin-left: 330px;margin-bottom: 11px;width: 145px;">
+                                排序方式:
+                                <div class="btn-btn ascending">降序</div>
+                            </div>
+                            <div class="pie" style="position: relative;">
+                                <div id="main" style="position: absolute;top:-56px;"></div>
+                                <!-- <div class="pie-title" style="left: 30px;">二级单位次数情况占比图</div> -->
+                            </div>
+                            <div class="table-num">
+                                <!-- 表格 -->
+                                <div style="width:100%">
+                                    <div class="t_r centent" style="border-radius: 5px;">
+                                        <div class="t_r_content style2 scrollXY scroll" id="t_r_content" style="height: 209px;">
+                                            <div style="width: 380px;">
+
+                                            </div>
+                                            <table id="sjcs" style="width: 380px;">
+                                                
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- 四角 -->
+                <img class="angle-1" src="./image/audit/angle-1.png" alt="上角">
+                <img class="angle-2" src="./image/audit/angle-2.png" alt="右角">
+                <img class="angle-3" src="./image/audit/angle-3.png" alt="下角">
+                <img class="angle-4" src="./image/audit/angle-4.png" alt="左角">
+            </div>
+            <!-- 二级单位柱状体 -->
+            <div class="audit-content-zhuzt">
+                <div class="zhuzt-content">
+                    <div id="zhuzt" style="width: 1269px;height: 249px;"></div>
+                </div>
+                <!-- 搜索框 -->
+                <div class="zhuzt-search">
+                    选择时间：
+                    <input type="text"   id="date-range"  onfocus="this.blur()" style="padding-left: 8px;">
+                    <div class="zhuzt-search-btn">搜索</div>
+                    <div class="zhuzt-search-btn reset">重置</div>
+                </div>
+                <!-- 四角 -->
+                <img class="angle-1" src="./image/audit/angle-1.png" alt="上角">
+                <img class="angle-2" src="./image/audit/angle-2.png" alt="右角">
+                <img class="angle-3" src="./image/audit/angle-3.png" alt="下角">
+                <img class="angle-4" src="./image/audit/angle-4.png" alt="左角">
+            </div>
+            <!-- 审计事件 -->
+            <div class="audit-content-zify">
+                <div class="zify-content">
+                    <div class="zify-content-title">重大审计问题</div>
+                    <div id="zify" style="width: 560px;height: 248px;"></div>
+                </div>
+                <!-- 四角 -->
+                <img class="angle-1" src="./image/audit/angle-1.png" alt="上角">
+                <img class="angle-2" src="./image/audit/angle-2.png" alt="右角">
+                <img class="angle-3" src="./image/audit/angle-3.png" alt="下角">
+                <img class="angle-4" src="./image/audit/angle-4.png" alt="左角">
+            </div>
+            <!-- 案件类型 -->
+            <div class="audit-content-project">
+                <div class="project-content">
+                    <div class="project-content-title">案件类型</div>
+                    <div id="project" style="width: 355px;height: 295px;"></div>
+                </div>
+                <!-- 四角 -->
+                <img class="angle-1" src="./image/audit/angle-1.png" alt="上角">
+                <img class="angle-2" src="./image/audit/angle-2.png" alt="右角">
+                <img class="angle-3" src="./image/audit/angle-3.png" alt="下角">
+                <img class="angle-4" src="./image/audit/angle-4.png" alt="左角">
+            </div>
+            <!-- 案件类别 -->
+            <div class="audit-content-type">
+                <div class="type-content">
+                    <div class="type-content-title">案件类别</div>
+                    <div id="type" style="width: 355px;height: 295px;"></div>
+                </div>
+                <!-- 四角 -->
+                <img class="angle-1" src="./image/audit/angle-1.png" alt="上角">
+                <img class="angle-2" src="./image/audit/angle-2.png" alt="右角">
+                <img class="angle-3" src="./image/audit/angle-3.png" alt="下角">
+                <img class="angle-4" src="./image/audit/angle-4.png" alt="左角">
+            </div>
+            <!-- 结案方式 -->
+            <div class="audit-content-money">
+                <div class="money-content">
+                    <div class="money-content-title">结案方式</div>
+                    <div id="money" style="width: 355px;height: 295px;"></div>
+                </div>
+                <!-- 四角 -->
+                <img class="angle-1" src="./image/audit/angle-1.png" alt="上角">
+                <img class="angle-2" src="./image/audit/angle-2.png" alt="右角">
+                <img class="angle-3" src="./image/audit/angle-3.png" alt="下角">
+                <img class="angle-4" src="./image/audit/angle-4.png" alt="左角">
+            </div>
+            <!-- 法律案件金额统计图 -->
+            <div class="audit-content-group">
+                <div class="group-content">
+                    <div class="group-content-title">法律案件金额统计</div>
+                    <div id="group" style="width: 698px;height: 240px;"></div>
+                    
+                </div>
+                <!-- 四角 -->
+                <img class="angle-1" src="./image/audit/angle-1.png" alt="上角">
+                <img class="angle-2" src="./image/audit/angle-2.png" alt="右角">
+                <img class="angle-3" src="./image/audit/angle-3.png" alt="下角">
+                <img class="angle-4" src="./image/audit/angle-4.png" alt="左角">
+            </div>
+        </div>
+        <div class="bottom-time">
+            此数据来源于审计统计&nbsp;
+            <span></span>
+        </div>
+    </div>
+</body>
+<script src="js/domjs/legal.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/jquery.daterangepicker.js"></script>
+<script src="js/all.js"></script>
+<script src="js/echart.min.js"></script>
+<script src="js/worldcloud.js"></script>
+</html>

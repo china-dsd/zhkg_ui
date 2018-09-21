@@ -1,0 +1,556 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.all {
+    width: 1920px;
+    height: 1080px;
+    background: url("../../image/index/ba.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.title {
+    width: 100%;
+    color: #ffffff;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.title .zx {
+    font-size: 33px;
+    display: block;
+    margin: 30px auto 0 auto;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+.title .right {
+    position: absolute;
+    right: 0;
+    top: -3px;
+}
+
+.title>img {
+    width: 100%;
+}
+
+.maturity-route {
+    height: 40px;
+    color: #ffffff;
+    padding-left: 20px;
+    /*width: 1920px;*/
+}
+
+.maturity-route a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.cotent_box {
+    padding-left: 16px;
+}
+
+.cotent_box>div {
+    float: left;
+}
+
+.cotent_box .left {
+    width: 514px;
+    /*border: 1px solid red;*/
+}
+
+/*成熟度评分*/
+
+.cotent_box .left .left_one {
+    position: relative;
+}
+
+.cotent_box .left .left_one .line1 {
+    box-sizing: border-box;
+    background: url("../../image/index/csdpf.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 492px;
+    height: 197px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-left: 14px;
+    padding-top: 10px;
+}
+
+.cotent_box .left .left_one #box1 {
+    margin-top: -30px;
+    margin-left: -10px;
+}
+
+/*风险事件数量及金额*/
+
+.cotent_box .left .left_two {
+    position: relative;
+    margin-top: 32px;
+}
+
+.cotent_box .left .left_two .line2 {
+    box-sizing: border-box;
+    background: url("../../image/index/csdpf.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 492px;
+    height: 197px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-left: 14px;
+    padding-top: 10px;
+}
+
+.cotent_box .left .left_two #box2 {
+    margin-top: -30px;
+    margin-left: -10px;
+}
+
+/*审计问题记录*/
+
+.cotent_box .left .left_three {
+    position: relative;
+    width: 514px;
+    height: 198px;
+    margin-top: 12px;
+}
+
+.cotent_box .left .left_three .line3 {
+    box-sizing: border-box;
+    background: url("../../image/index/csdpf.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 655px;
+    height: 199px;
+    margin-left: 10px;
+    padding-left: 14px;
+    padding-top: 10px;
+}
+
+.cotent_box .left .left_three #box3 {
+    margin-left: -20px;
+}
+
+/*风险评估*/
+
+.cotent_box .left .left_three {
+    margin-top: 32px;
+    position: relative;
+}
+
+.cotent_box .left .left_three .line3 {
+    box-sizing: border-box;
+    background: url("../../image/index/csdpf.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 492px;
+    height: 197px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-left: 14px;
+    padding-top: 10px;
+}
+
+/*法律案件*/
+
+.cotent_box .left .left_four {
+    position: relative;
+    margin-top: 32px;
+}
+
+.cotent_box .left .left_four .line4 {
+    box-sizing: border-box;
+    background: url("../../image/index/csdpf.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 492px;
+    height: 197px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-left: 14px;
+    padding-top: 10px;
+}
+
+.cotent_box .left .left_four #box4 {
+    margin-top: -30px;
+    margin-left: -10px;
+}
+
+.cotent_box .center {
+    margin-left: 16px;
+    width: 706px;
+    /*border: 1px solid yellow;*/
+}
+
+/*各单位全国分布图*/
+
+.cotent_box .center .center_one {
+    position: relative;
+    margin-top: 10px;
+}
+
+.cotent_box .center .center_one .yw {
+    width: 180px;
+    height: 40px;
+    background: url('../../image/index/hx.png');
+    background-size: 100% 100%;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    right: 212px;
+    top: 10px;
+}
+
+.cotent_box .center .center_one .yw:active {
+    background: url('../../image/index/hx_cative.png');
+    background-size: 100% 100%;
+}
+
+.cotent_box .center .center_one .hx {
+    width: 180px;
+    height: 40px;
+    background: url('../../image/index/hx.png');
+    background-size: 100% 100%;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.cotent_box .center .line5 {
+    background: url("../../image/index/csdpf.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 687px;
+    height: 426px;
+    margin-left: 10px;
+}
+
+.cotent_box .center #box5 {
+    width: 470px;
+    height: 433px;
+    /*background: url("image/unit/map.png");*/
+    background-size: 100% 100%;
+    position: relative;
+    /*border: 1px solid yellow;*/
+    top: 60px;
+    left: 0px;
+    line-height: 30px;
+    color: #50A9B0;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+/*信用等级占比*/
+
+.cotent_box .center .center_two {
+    position: relative;
+    width: 703px;
+    height: 198px;
+}
+
+.cotent_box .center .center_two .line6 {
+    box-sizing: border-box;
+    background: url("../../image/index/csdpf.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 683px;
+    height: 198px;
+    margin-left: 10px;
+    margin-top: 32px;
+    padding-left: 14px;
+    padding-top: 10px;
+}
+
+.cotent_box .center .center_two #box6 {
+    margin-left: 20px;
+    margin-top: -20px;
+}
+
+/*审计问题整改记录*/
+
+.cotent_box .center .center_three {
+    position: relative;
+    width: 705px;
+    height: 198px;
+}
+
+.cotent_box .center .center_three .line7 {
+    box-sizing: border-box;
+    background: url("../../image/index/csdpf.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 685px;
+    height: 196px;
+    margin-left: 10px;
+    margin-top: 32px;
+    padding-left: 14px;
+    padding-top: 10px;
+}
+
+.cotent_box .center .center_three #box7_1 {
+    margin-left: -40px;
+    margin-top: 12px;
+}
+
+.cotent_box .center .center_three #box7_2 {
+    margin-left: -40px;
+    margin-top: 12px;
+}
+
+.cotent_box .center .center_three #box7_3 {
+    margin-left: -40px;
+    margin-top: 12px;
+}
+
+.cotent_box .center .center_three #box7_4 {
+    margin-left: -40px;
+    margin-top: 12px;
+}
+
+.cotent_box .right {
+    margin-left: 14px;
+    width: 620px;
+    /*border: 1px solid orangered;*/
+}
+
+/*合作单位*/
+
+.cotent_box .right .right_one {
+    position: relative;
+    width: 620px;
+    height: 196px;
+}
+
+/*信用等级占比*/
+
+.cotent_box .right .right_two {
+    position: relative;
+    width: 620px;
+    height: 196px;
+    margin-top: 33px;
+}
+
+.cotent_box .right .right_two .line9 {
+    box-sizing: border-box;
+    background: url("../../image/index/csdpf.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 196px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-left: 14px;
+    padding-top: 10px;
+}
+
+.cotent_box .right .right_one #box9 {
+    margin-left: 70px;
+}
+
+/*单位划分图*/
+
+.cotent_box .right .right_three {
+    position: relative;
+    width: 620px;
+    height: 196px;
+}
+
+.cotent_box .right .right_three .line10 {
+    box-sizing: border-box;
+    background: url("../../image/index/csdpf.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 196px;
+    margin-left: 10px;
+    margin-top: 33px;
+    padding-left: 14px;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+.cotent_box .right .right_three #box10 canvas {
+    height: 190px !important;
+    width: 600px !important;
+}
+
+.cotent_box .right .right_four {
+    position: relative;
+    width: 620px;
+    height: 196px;
+}
+
+.cotent_box .right .right_four .line11 {
+    box-sizing: border-box;
+    background: url("../../image/index/csdpf.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 196px;
+    margin-left: 10px;
+    margin-top: 32px;
+    padding-left: 14px;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+.cotent_box .right .right_four #box11 canvas {
+    height: 250px !important;
+}
+
+/* 合作单位 */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+    width: 100%;
+    border: #36f8ff solid 0px;
+}
+
+table td {
+    height: 25px;
+    text-align: center;
+}
+
+.cotent_box .right .right_two {
+    position: relative;
+    width: 620px;
+    height: 198px;
+    margin-bottom: 8px;
+}
+
+.cotent_box .right .right_one .line8 {
+    box-sizing: border-box;
+    background: url("../../image/index/csdpf.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 198px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-left: 14px;
+    padding-top: 10px;
+}
+
+.cotent_box .right .right_one .line8 .line9-table {
+    width: 577px;
+    height: 125px;
+    margin: 0 auto;
+    vertical-align: top;
+    overflow: auto;
+    margin-top: 10px;
+    margin-left: -5px;
+}
+
+.cotent_box .right .right_one .line8 table {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    /*边框会被分开*/
+    border-collapse: separate;
+}
+
+.cotent_box .right .right_one .line8 table th {
+    color: #36f8ff;
+}
+
+.cotent_box .right .right_one .line8 table td {
+    color: #fff;
+}
+
+/* 圆角 */
+
+.cotent_box .right .right_one .line8 table tr:first-child th:first-child {
+    border-top-left-radius: 5px;
+}
+
+.cotent_box .right .right_one .line8 table tr:first-child th:last-child {
+    border-top-right-radius: 5px;
+}
+
+.cotent_box .right .right_one .line8 table tr:last-child td:first-child {
+    border-bottom-left-radius: 5px;
+}
+
+.cotent_box .right .right_one .line8 table tr:last-child td:last-child {
+    border-bottom-right-radius: 5px;
+}
+
+/*点击*/
+
+.active {
+    background: url("../../image/index/hx_cative.png") !important;
+    background-size: 100% 100% !important;
+}
+
+.pull1 {
+    display: none;
+}
+
+.pull2 {
+    display: none;
+}
+
+.change {
+    display: block;
+}
+
+select {
+    width: 200px;
+    height: 23px;
+    line-height: 23px;
+    border: none;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    border: 1px solid #36f8ff;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+}
+
+select option {
+    background-color: #000;
+    color: #fff;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+    width: 100%;
+    border: #36f8ff solid 0px;
+}
+
+table td,th {
+    border: 1px solid #36f8ff;
+    border-bottom: none;
+    height: 29px;
+    text-align: center;
+    border-left: 0px;
+}
+table th {
+    border-top: none;
+}
+.bottom-time {
+    position: absolute;
+    bottom: 16px;
+    right: 27px;
+    font-size: 12px;
+    color: #fff;
+}

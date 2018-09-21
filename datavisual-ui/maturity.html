@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>成熟度</title>
+    <link rel="stylesheet" href="css/maturity/maturity.css">
+    <link rel="stylesheet" href="css/audit/daterangepicker.css" />
+    <link rel="stylesheet" href="css/all.css">
+    <script src="js/echart.min.js"></script>
+    <script src="js/worldcloud.js"></script>
+    <script src="js/jquery.min.js"></script> 
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="js/scroll.min.js"></script>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="maturity">
+        <!-- 标题 -->
+        <div class="maturity-title">在线审计与经营风险防范数据可视化
+            <!-- 登陆条 -->
+            <div class="maturity-land">
+                <span style="color: #fff;font-size: 20px;">当前时间:&nbsp;</span>
+                <span id="show_time0" style="color: #fff;font-size: 20px;"></span>
+                <span><a href="#" style="color: #36f8ff;font-size: 20px;line-height: 20px;text-decoration: none;">登录</a></span>
+                <span style="color: #36f8ff;font-size: 20px;line-height: 20px;cursor: pointer;">|&nbsp;退出</span>
+                <span style="display: inline-block;width:0;height:0;border-left: 5px solid transparent;border-top: 5px solid #33f8ff;border-right: 5px solid transparent;"></span>
+            </div>
+        </div>
+        <div class="title-bottom"></div>
+        <!-- 路径 -->
+        <div class="maturity-route">
+            <a href="index.html">首页</a>&nbsp;&nbsp;>&nbsp;
+            <a href="#">业务画像</a>
+        </div>
+        <!-- 内容 -->
+        <div class="maturity-content">
+            <!-- 列表 -->
+            <div class="maturity-content-list">
+                <ul>
+                    <li><a href="audit.html">审计问题</a></li>
+                    <li class="active"><a>成熟度</a></li>
+                    <li><a href="assess.html">风险评估</a></li>
+                    <li><a href="credit.html">信用</a></li>
+                    <li><a href="legal.html">法律</a></li>
+                    <li><a href="events.html">风险事件</a></li>
+                </ul>
+            </div>
+            <!-- 表格 -->
+            <div class="maturity-content-table">
+                <div class="table-content">
+                    <div class="table">
+                        <div class="table-title">
+                            <span>成熟度排名TOP10</span>
+                        </div>
+                        <div class="table-text">
+                            <div class="table-text-td">
+                                <!-- 3 -->
+                                <div style="width:100%">
+                                    <div class="t_r">
+                                        <div class="t_r_content style2 scrollXY scroll" id="t_r_content" onscroll="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 底部的时间 -->
+                <div class="bottom-time">
+                    此数据来源于审计统计&nbsp;
+                    <span></span>
+                </div>
+                <!-- 四角 -->
+                <img class="angle-1" src="./image/audit/angle-1.png" alt="上角">
+                <img class="angle-2" src="./image/audit/angle-2.png" alt="右角">
+                <img class="angle-3" src="./image/audit/angle-3.png" alt="下角">
+                <img class="angle-4" src="./image/audit/angle-4.png" alt="左角">
+            </div>
+            <!-- 成熟度等级 -->
+            <div class="maturity-content-num">
+                <div class="num-content">
+                    <div class="table">
+                        <div class="table-title">
+                            <span>成熟度等级</span>
+                        </div>
+                        <div class="table-text">
+                            <div class="btn" style="margin-left: 330px;margin-bottom: 11px;width: 145px;">
+                                排序方式:
+                                <div class="btn-btn ascending">降序</div>
+                            </div>
+                            <div class="pie" style="position: relative;">
+                                <div id="main" style="position: absolute;top:-56px;"></div>
+                                <div class="pie-title">成熟度等级占比图</div>
+                            </div>
+                            <div class="table-num">
+                                <!-- 表格 -->
+                                <div style="width:100%">
+                                    <div class="t_r" style="border-radius: 5px;">
+                                        <div class="t_r_content style2 scrollXY scroll" id="t_r_content" style="height: 209px;">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- 底部的时间 -->
+                <div class="bottom-time">
+                    此数据来源于审计统计&nbsp;
+                    <span></span>
+                </div>
+                <!-- 四角 -->
+                <img class="angle-1" src="./image/audit/angle-1.png" alt="上角">
+                <img class="angle-2" src="./image/audit/angle-2.png" alt="右角">
+                <img class="angle-3" src="./image/audit/angle-3.png" alt="下角">
+                <img class="angle-4" src="./image/audit/angle-4.png" alt="左角">
+            </div>
+            <!-- 各二级单位成熟度评分 -->
+            <div class="maturity-content-zhuzt">
+                <div class="zhuzt-content">
+                    <div id="zhuzt" style="width: 1350px;height: 249px;">
+
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    
+                </script>
+                <!-- 搜索框 -->
+                <div class="zhuzt-search">
+                    评分标准：
+                    <select>
+                        <option value="">总分</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                    </select>
+                    选择时间：
+                    <input type="text" id="date-range">
+                    <div class="zhuzt-search-btn">确定</div>
+                </div>
+                <!-- 底部的时间 -->
+                <div class="bottom-time">
+                    此数据来源于审计统计&nbsp;
+                    <span></span>
+                </div>
+                <!-- 四角 -->
+                <img class="angle-1" src="./image/audit/angle-1.png" alt="上角">
+                <img class="angle-2" src="./image/audit/angle-2.png" alt="右角">
+                <img class="angle-3" src="./image/audit/angle-3.png" alt="下角">
+                <img class="angle-4" src="./image/audit/angle-4.png" alt="左角">
+            </div>
+            <!-- 审计事件 -->
+            <div class="maturity-content-zify">
+                <div class="zify-content">
+                    <div class="zify-content-title">审计事件</div>
+                    <div id="zify" style="width: 560px;height: 248px;"></div>
+                </div>
+                <!-- 底部的时间 -->
+                <div class="bottom-time">
+                    此数据来源于审计统计&nbsp;
+                    <span></span>
+                </div>
+                <!-- 四角 -->
+                <img class="angle-1" src="./image/audit/angle-1.png" alt="上角">
+                <img class="angle-2" src="./image/audit/angle-2.png" alt="右角">
+                <img class="angle-3" src="./image/audit/angle-3.png" alt="下角">
+                <img class="angle-4" src="./image/audit/angle-4.png" alt="左角">
+            </div>
+            <!-- 审计项目 -->
+            <div class="maturity-content-project">
+                <div class="project-content">
+                    <div class="project-content-title">审计项目类型</div>
+                    <div id="project" style="width: 355px;height: 295px;"></div>
+                </div>
+                <!-- 底部的时间 -->
+                <div class="bottom-time">
+                    此数据来源于审计统计&nbsp;
+                    <span></span>
+                </div>
+                <!-- 四角 -->
+                <img class="angle-1" src="./image/audit/angle-1.png" alt="上角">
+                <img class="angle-2" src="./image/audit/angle-2.png" alt="右角">
+                <img class="angle-3" src="./image/audit/angle-3.png" alt="下角">
+                <img class="angle-4" src="./image/audit/angle-4.png" alt="左角">
+            </div>
+            <!-- 问题类型 -->
+            <div class="maturity-content-type">
+                <div class="type-content">
+                    <div class="type-content-title">问题类型</div>
+                    <div id="type" style="width: 355px;height: 295px;"></div>
+                </div>
+                <!-- 底部的时间 -->
+                <div class="bottom-time">
+                    此数据来源于审计统计&nbsp;
+                    <span></span>
+                </div>
+                <!-- 四角 -->
+                <img class="angle-1" src="./image/audit/angle-1.png" alt="上角">
+                <img class="angle-2" src="./image/audit/angle-2.png" alt="右角">
+                <img class="angle-3" src="./image/audit/angle-3.png" alt="下角">
+                <img class="angle-4" src="./image/audit/angle-4.png" alt="左角">
+            </div>
+            <!-- 问题金额 -->
+            <div class="maturity-content-money">
+                <div class="money-content">
+                    <div class="money-content-title">问题金额</div>
+                    <div id="money" style="width: 355px;height: 295px;"></div>
+                </div>
+                <!-- 底部的时间 -->
+                <div class="bottom-time">
+                    此数据来源于审计统计&nbsp;
+                    <span></span>
+                </div>
+                <!-- 四角 -->
+                <img class="angle-1" src="./image/audit/angle-1.png" alt="上角">
+                <img class="angle-2" src="./image/audit/angle-2.png" alt="右角">
+                <img class="angle-3" src="./image/audit/angle-3.png" alt="下角">
+                <img class="angle-4" src="./image/audit/angle-4.png" alt="左角">
+            </div>
+            <!-- 各单位成熟度趋势 -->
+            <div class="maturity-content-group">
+                <div class="group-content">
+                    <div class="group-content-title">
+                        各单位成熟度趋势
+                        <div class="btn" style="margin-right: 20px;margin-bottom: 11px;width: 145px;float: right;">
+                            排序方式:
+                            <div class="btn-btn ascending">升序</div>
+                        </div>
+                    </div>
+                    
+                    <!-- 表格 -->
+                    <div style="width: 656px;margin: 0 auto;">
+                            <div class="table style1 scrollbox scroll" id="t_r_content">
+                                </div>
+                    </div>
+                    
+                    <!-- 翻页 -->
+                    <div class="page">
+                        <ul>
+                            <li class="active">1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 底部的时间 -->
+                <div class="bottom-time">
+                    此数据来源于审计统计&nbsp;
+                    <span></span>
+                </div>
+                <!-- 四角 -->
+                <img class="angle-1" src="./image/audit/angle-1.png" alt="上角">
+                <img class="angle-2" src="./image/audit/angle-2.png" alt="右角">
+                <img class="angle-3" src="./image/audit/angle-3.png" alt="下角">
+                <img class="angle-4" src="./image/audit/angle-4.png" alt="左角">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/domjs/maturity.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/jquery.daterangepicker.js"></script>
+<script src="js/all.js"></script>
+<script>
+    scrollsY(".scrollbox");		
+	scrollsXY(".scrollXY");	//多个X轴
+</script>
+</html>

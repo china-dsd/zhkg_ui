@@ -1,0 +1,755 @@
+/* 成熟度 */
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#credit {
+    width: 1920px;
+    height: 1200px;
+    background: url(../../image/audit/background-image.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+#credit .credit-title {
+    width: 1920px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 30px;
+    padding-top: 33px;
+    padding-bottom: 5px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 10px;
+}
+#credit .credit-land{
+    position: relative;
+    top: -46px;
+    right: 20px;
+    text-align: right;
+    letter-spacing: 0;
+}
+#credit .title-bottom {
+    width: 1920px;
+    height: 23px;
+    background: url(../../image/audit/title-bottom.png) no-repeat;
+    background-size: 100%;
+}
+
+/* 路径 */
+#credit .credit-route{
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+#credit .credit-route a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* 内容 */
+
+/* 列表 */
+
+.credit-content {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.credit-content .credit-content-list {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.credit-content .credit-content-list ul {
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 14px;
+    width: 222px;
+    height: 364px;
+}
+
+.credit-content .credit-content-list ul li {
+    width: 222px;
+    height: 52px;
+    background: url(../../image/audit/list-2.png) no-repeat;
+    list-style: none;
+    color: #fff;
+    font-size: 22px;
+    line-height: 47px;
+    text-align: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.credit-content .credit-content-list ul li a{
+    text-decoration: none;
+    color: #fff;
+    width: 222px;
+    height: 52px;
+    display: block;
+}
+.credit-content .credit-content-list ul li.active {
+    background: url(../../image/audit/list-11.png) no-repeat;
+}
+.credit-content .credit-content-list ul li:last-child {
+    margin-bottom: 0;
+}
+
+/* 表格 */
+
+.credit-content-table {
+    font-size: 16px;
+    padding: 11px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+.table-content {
+    width: 1033px;
+    height: 329px;
+    padding-top: 12px;
+    background: url(../../image/audit/table.png) no-repeat;
+}
+
+.table-content .table {
+    /* border: 2px solid #36f8ff; */
+    border-top: 0px;
+    width: 1000px;
+    height: 304px;
+    box-sizing: border-box;
+    margin-left: 16px;
+}
+
+.table-content .table .table-title {
+    height: 40px;
+    box-sizing: border-box;
+    line-height: 40px;
+}
+
+.table-content .table .table-title span{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 16px;
+}
+.table-content .table .table-text {
+    clear: both;
+    border: 2px solid transparent;
+    border-top: 0;
+    height: 264px;
+    box-sizing: border-box;
+    padding: 14px 16px;
+}
+
+.table-content .table .table-text .table-text-td {
+    width: 962px;
+    height: 232px;
+}
+
+.table-content .table .table-text .table-text-td table {
+    color: #000;
+    font-size: 16px;
+    border-color: #36f8ff;
+    padding: 14px 16px;
+}
+
+.table-content .table .table-text .table-text-td table td {
+    text-align: center;
+    padding: 1px 15px;
+    color: #fff;
+}
+
+/* 滚动条 */
+
+/* ::-webkit-scrollbar {
+    
+} */
+
+/* 底部时间 */
+/* 四个角 */
+.bottom-time{
+    position: absolute;
+    bottom: 16px;
+    right: 27px;
+    font-size: 12px;
+    color: #fff;
+}
+.angle-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.angle-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.angle-3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.angle-4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* 成熟度等级 */
+
+.credit-content-num {
+    font-size: 16px;
+    display: inline-block;
+    position: relative;
+    margin-left: 9px;
+    vertical-align: top;
+    padding: 11px;
+}
+
+.credit-content-num .num-content {
+    width: 562px;
+    height: 341px;
+    background: url(../../image/audit/num.png) no-repeat;
+}
+
+.num-content .table {
+    border-top: 0px;
+    width: 527px;
+    height: 304px;
+    box-sizing: border-box;
+    margin-left: 18px;
+    padding-top: 15px;
+}
+
+.num-content .table .table-title {
+    height: 40px;
+    box-sizing: border-box;
+    line-height: 40px;
+}
+
+.num-content .table .table-title span{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 16px;
+}
+
+
+.num-content .table .table-text {
+    clear: both;
+    border: 2px solid transparent;
+    border-top: 0;
+    height: 264px;
+    box-sizing: border-box;
+    padding: 14px 16px;
+    font-size: 0;
+}
+
+.num-content .table .table-text .btn {
+    color: #fff;
+    font-size: 14px;
+    float: left;
+    width: 491px;
+}
+
+.num-content .table .table-text .btn .btn-btn {
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    width: 72px;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    margin-left: 9px;
+    border-radius: 5px;
+    background-color: #dd8b00;
+    cursor: pointer;
+}
+
+.num-content .table .table-text .btn .btn-btn:hover {
+    background-color: #b77300;
+}
+
+.num-content .table .table-text .pie {
+    font-size: 16px;
+    display: inline-block;
+    width: 228px;
+    height: 211px;
+    /* background-color: #b77300; */
+    float: left;
+}
+
+.num-content .table .table-text .pie .pie-title {
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+}
+
+.num-content .table .table-text .table-num {
+    float: left;
+    font-size: 12px;
+    display: inline-block;
+    width: 263px;
+    height: 211px;
+    /* background-color: rebeccapurple; */
+}
+
+.num-content .table .table-text .table-num .table-num-1 {
+    width: 19px;
+    height: 19px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+#main {
+    width: 220px;
+    height: 245px;
+    margin: 0 auto;
+}
+
+/* 二级单位柱状图 */
+
+.credit-content-zhuzt {
+    font-size: 16px;
+    padding: 11px;
+    display: inline-block;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 9px;
+    vertical-align: top;
+}
+
+.credit-content-zhuzt .zhuzt-content {
+    width: 1269px;
+    height: 249px;
+    /* padding-top: 12px; */
+    background: url(../../image/audit/zhuzt.png) no-repeat;
+}
+
+.credit-content-zhuzt .zhuzt-search {
+    position: absolute;
+    width: 328px;
+    height: 23px;
+    line-height: 23px;
+    top: 25px;
+    right: 25px;
+    font-size: 14px;
+    color: #fff;
+    margin-left: 18px;
+}
+.credit-content-zhuzt .zhuzt-search select{
+    width: 120px;
+    height: 23px;
+    line-height: 23px;
+    border: none;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    border: 1px solid #36f8ff;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+}
+.credit-content-zhuzt .zhuzt-search select option{
+    background-color: #000;
+    color: #fff;
+}
+.credit-content-zhuzt .zhuzt-search input {
+    width: 175px;
+    height: 23px;
+    line-height: 23px;
+    border: none;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    border: 1px solid #36f8ff;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.credit-content-zhuzt .zhuzt-search .zhuzt-search-btn {
+    display: inline-block;
+    width: 52px;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    background-color: #15b419;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.credit-content-zhuzt .zhuzt-search .zhuzt-search-btn:hover {
+    background-color: #11872c;
+}
+
+/* 审计事件字符云图 */
+
+.credit-content-zify {
+    font-size: 16px;
+    display: inline-block;
+    position: relative;
+    margin-left: 9px;
+    margin-top: 9px;
+    vertical-align: top;
+    padding: 11px;
+}
+
+.credit-content-zify .zify-content {
+    width: 562px;
+    height: 248px;
+    background: url(../../image/audit/zify.png) no-repeat;
+}
+
+.credit-content-zify .zify-content .zify-content-title {
+    font-size: 20px;
+    color: #fff;
+    padding: 20px;
+}
+
+.zify-content {
+    position: relative;
+}
+
+#zify {
+    position: absolute;
+    top: 0;
+}
+
+#zhuzt {
+    position: relative;
+}
+
+/* #zhuzt canvas {
+    position: absolute; */
+    /* left: -88px !important; */
+    /* width: 1448px !important; */
+/* } */
+
+/* 审计项目 */
+
+.credit-content-project {
+    font-size: 16px;
+    padding: 11px;
+    display: inline-block;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 9px;
+    vertical-align: top;
+}
+
+.credit-content-project .project-content {
+    width: 355px;
+    height: 295px;
+    background: url(../../image/audit/project.png) no-repeat;
+}
+
+.credit-content-project .project-content .project-content-title {
+    font-size: 20px;
+    color: #fff;
+    padding: 17px 0 0 20px;
+}
+
+/* 问题类型 */
+
+.credit-content-type {
+    font-size: 16px;
+    padding: 11px;
+    display: inline-block;
+    position: relative;
+    margin-left: 11px;
+    margin-top: 9px;
+    vertical-align: top;
+}
+
+.credit-content-type .type-content {
+    width: 355px;
+    height: 295px;
+    background: url(../../image/audit/project.png) no-repeat;
+}
+
+.credit-content-type .type-content .type-content-title {
+    font-size: 20px;
+    color: #fff;
+    padding: 17px 0 0 20px;
+}
+
+/* 问题金额 */
+
+.credit-content-money {
+    font-size: 16px;
+    padding: 11px;
+    display: inline-block;
+    position: relative;
+    margin-left: 11px;
+    margin-top: 9px;
+    vertical-align: top;
+}
+
+.credit-content-money .money-content {
+    width: 355px;
+    height: 295px;
+    background: url(../../image/audit/project.png) no-repeat;
+}
+
+.credit-content-money .money-content .money-content-title {
+    font-size: 20px;
+    color: #fff;
+    padding: 17px 0 0 20px;
+}
+
+/* 集团审计 */
+
+.credit-content-group {
+    font-size: 16px;
+    padding: 11px;
+    display: inline-block;
+    position: relative;
+    margin-left: 11px;
+    margin-top: 9px;
+    vertical-align: top;
+}
+
+.credit-content-group .group-content {
+    width: 698px;
+    height: 295px;
+    background: url(../../image/audit/group.png) no-repeat;
+}
+
+.credit-content-group .group-content .group-content-title {
+    font-size: 20px;
+    color: #fff;
+    padding: 17px 0 0 20px;
+    margin-bottom: 14px;
+}
+.credit-content-group .group-content .btn {
+    color: #fff;
+    font-size: 14px;
+    float: left;
+    width: 491px;
+}
+
+.credit-content-group .group-content .btn-btn {
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    width: 72px;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    margin-left: 9px;
+    border-radius: 5px;
+    background-color: #dd8b00;
+    cursor: pointer;
+}
+
+.credit-content-group .group-content .btn-btn:hover {
+    background-color: #b77300;
+}
+.credit-content-group .group-content .table{
+    width: 655px;
+    height: 190px;
+    margin: 0 auto;
+    vertical-align: top;
+    clear: both;
+    overflow: auto;
+}
+.credit-content-group .group-content .table table{
+    width: 647px;
+    /* 让table的内外两层合并 */
+    border-collapse:separate;
+}
+.credit-content-group .group-content .table th,td{
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid #36f8ff;
+    border-bottom: none;
+}
+.credit-content-group .group-content .table th{
+    color: #36f8ff;
+    font-size: 14px;
+}
+.credit-content-group .group-content .table td{
+    color: #fff;
+    font-size: 12px;
+}
+.credit-content-group .group-content .table table tr:first-child th:first-child {
+    border-top-left-radius: 5px;
+}
+
+.credit-content-group .group-content .table table tr:first-child th:last-child {
+    border-top-right-radius: 5px;
+}
+.credit-content-group .group-content .table table tr:last-child td:first-child {
+    border-bottom-left-radius: 5px;
+}
+
+.credit-content-group .group-content .table table tr:last-child td:last-child {
+    border-bottom-right-radius: 5px;
+}
+.credit-content-group .group-content .table table tr:last-child td{
+    border-bottom: 1px solid #36f8ff;
+}
+/* 信用单位趋势 */
+.credit-content-group .group-content .page{
+    width: 100%;
+}
+.credit-content-group .group-content .page ul{
+    /* width: 100%; */
+    height: 32px;
+    padding: 0;
+    margin: 0;
+    line-height: 32px;
+    margin-left: 254px;
+}
+.credit-content-group .group-content .page ul li{
+    list-style: none;
+    float: left;
+    width: 23px;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #579bd7;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 8px 8px 0 8px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.credit-content-group .group-content .page ul li.active{
+    background-color: #579bd7;
+}
+
+/* 滚动条 */
+
+/*滚动条样式*/
+
+/* 谷歌 */
+
+/* #t_r_content::-webkit-scrollbar { */
+    /*滚动条整体样式*/
+    /* width: 8px; */
+    /*高宽分别对应横竖滚动条的尺寸*/
+    /* height: 8px; */
+    /* background-color: rgba(54, 248, 255, 0.2); */
+    /* background-color: #36f8ff;
+    opacity: 0.5; */
+    /* border-radius: 5px; */
+/* } */
+
+/*滚动条里面小方块*/
+
+/* #t_r_content::-webkit-scrollbar-thumb { */
+    /* border-radius: 5px; */
+    /* -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2); */
+    /* background: rgba(0,0,0,0.2); */
+    /* background-color: #36f8ff; */
+/* } */
+
+/* #t_r_content::-webkit-scrollbar-track { */
+    /*滚动条里面轨道*/
+    /* -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2); */
+    /* border-radius: 0; */
+    /* background: rgba(0, 0, 0, 0.1); */
+/* } */
+
+/* #t_r_content::-webkit-scrollbar-corner { */
+    /* display: none; */
+/* } */
+
+
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+    width: 100%;
+    border: #000 solid 0px;
+}
+
+table td {
+    /* border: 1px solid #36f8ff; */
+    height: 25px;
+    text-align: center;
+    /* border-left: 0px; */
+}
+
+fff table th {
+    border: #36f8ff solid 1px;
+    white-space: nowrap;
+    height: 21px;
+    border-top: 0px;
+    border-left: 0px;
+}
+
+.t_left {
+    width: 30%;
+    height: auto;
+    float: left;
+    border-top: 1px solid #36f8ff;
+    border-left: 1px solid #36f8ff;
+}
+
+.t_r_content {
+    width: 100%;
+    height: 231px;
+    overflow: auto;
+}
+
+.t_r_content td {
+    color: #fff;
+}
+
+.cl_freeze {
+    height: 200px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.t_r {
+    width: 100%;
+    height: auto;
+    float: left;
+    border: 1px solid #36f8ff;
+    /* border-right: #36f8ff solid 1px; */
+}
+
+.t_r table {
+    width: 5000px;
+}
+
+/*
+.t_r_title {
+    width: 1720px;
+}
+ */
+
+.t_r_t {
+    width: 100%;
+    overflow: hidden;
+}
+
+.bordertop {
+    border-top: 0px;
+}
+#zify canvas{
+    height: 209px !important;
+    top: 32px !important;
+}
+
+
